@@ -1,0 +1,146 @@
+/* Exam Room & Proctoring HUD */
+.exam-room {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 20px;
+  align-items: start;
+}
+
+.proctor-panel {
+  position: sticky;
+  top: 20px;
+}
+
+.webcam-box {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: #020617;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--border);
+}
+
+.webcam-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.webcam-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.hud-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.hud-chip {
+  background: rgba(2, 6, 23, 0.78);
+  color: #f8fafc;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+}
+
+.q-nav-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.q-pill {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.q-pill.answered {
+  border-color: var(--success);
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.q-pill.current {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.mcq-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+
+.mcq-option:hover {
+  background: var(--bg-soft);
+}
+
+.mcq-option.selected {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.mcq-option input {
+  width: auto;
+  margin: 0;
+}
+
+.timer-badge {
+  font-variant-numeric: tabular-nums;
+  font-size: 1.05rem;
+  font-weight: 750;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.timer-badge.urgent {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.event-feed {
+  max-height: 170px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.event-item {
+  font-size: 0.78rem;
+  padding: 7px 9px;
+  border-radius: 7px;
+  background: var(--bg);
+  border-left: 3px solid var(--warning);
+}
+
+.event-item.HIGH { border-left-color: var(--danger); }
+.event-item.LOW  { border-left-color: var(--accent); }
+
