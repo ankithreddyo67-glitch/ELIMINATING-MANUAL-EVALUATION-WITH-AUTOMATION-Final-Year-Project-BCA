@@ -1,1 +1,1 @@
-"""Machine-learning answer scoring for AutoExam AI."""
+"""Backend package for the AI-Powered Automated Examination & Evaluation System."""

@@ -1,6 +1,6 @@
 // Real-time Computer Vision Proctoring & Browser Telemetry Monitor
 
-import { apiFetch } from "/js/api.js";
+import { apiFetch } from "./api.js";
 
 export class ExamProctorMonitor {
   constructor({ attemptId, videoEl, detectDevices, onMetrics, onIntegrityUpdate, onEvent, onWarning, onAutoSubmit }) {

@@ -1,19 +1,19 @@
-# AutoExam MySQL
+# AutoExam JavaScript
 
-This database package follows the current AutoExam SQLite schema and includes 34 SQL scripts for MySQL 8.0.16 or later. The Flask backend still uses SQLite. Running this package creates a separate schema and does not migrate existing records or switch the app connection.
+This package contains 34 browser JavaScript modules plus the HTML, CSS, and Python server needed to run AutoExam locally. The package includes student exam screens and results, faculty grading and question-bank tools, admin screens, analytics, and browser exam monitoring.
 
-## Install
+## Run locally
 
-From the extracted folder, open the MySQL command-line client with `mysql -u YOUR_USER -p --abort-source-on-error`. Use an account with permission to create the autoexam database, tables and views. Then enter these commands:
+1. Extract the ZIP and open a terminal in the extracted folder.
+2. Run `python app.py` with Python 3.10 or later.
+3. Open http://127.0.0.1:8000. The terminal shows the local demo account credentials.
 
-```sql
-SOURCE 00_install.sql;
-SHOW TABLES;
-SOURCE 33_demo_subjects.sql;
-```
+The server initializes a fresh SQLite database. For the optional Flask server, run `python -m pip install -r requirements.txt` first. The frontend uses native browser modules and does not need npm dependencies or a build step. Camera access requires browser permission.
 
-The last line is optional. Scripts 01-10 create tables in foreign-key order. Scripts 11-18 create views. Run reports 19-28 and integrity checks 29-32 individually in the same client after `USE autoexam;`. Healthy integrity checks return zero rows.
+## Main files
 
-Use a UTC session when storing or comparing AutoExam timestamps. Run `SET time_zone = '+00:00';` in your MySQL session. The package assumes a fresh schema for first installation. Re-running setup creates missing tables and replaces views. Existing tables are not upgraded in place.
-
-The archive has 34 SQL scripts plus this README. SQL scripts were checked for file ordering and dependencies. Live MySQL execution requires a MySQL client and server.
+- `frontend/js/app.js` starts the application and switches between portals.
+- `frontend/js/api.js` exposes shared session, theme, HTTP, and display helpers.
+- `frontend/js/views-student.js`, `views-faculty.js`, and `views-admin.js` route each portal to its screens.
+- `frontend/js/question-bank.js` provides question-bank actions and exam editing dialogs.
+- `frontend/js/cv-proctor.js` handles browser monitoring during exams.

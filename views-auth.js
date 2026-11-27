@@ -1,6 +1,6 @@
 // Authentication View (Login, Register, and One-Click Demo Access)
 
-import { apiFetch, escapeHtml, saveSession, showToast } from "/js/api.js";
+import { apiFetch, escapeHtml, saveSession, showToast } from "./api.js";
 
 export function renderAuthView(container, onAuthenticated) {
   let mode = "login";

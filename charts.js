@@ -1,6 +1,6 @@
 // Lightweight SVG Charts for Analytics & Result Visualization
 
-import { escapeHtml } from "/js/api.js";
+import { escapeHtml } from "./api.js";
 
 export function renderBarChartSvg(items, { height = 180, color = "#6366f1" } = {}) {
   const maxVal = Math.max(1, ...items.map((i) => Number(i.value || 0)));
