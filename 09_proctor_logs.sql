@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS proctor_logs (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    attempt_id BIGINT UNSIGNED NOT NULL,
+    event_type VARCHAR(255) NOT NULL,
+    severity VARCHAR(255) NOT NULL DEFAULT 'LOW' CHECK(severity IN ('LOW', 'MEDIUM', 'HIGH')),
+    details TEXT NOT NULL DEFAULT (''),
+    snapshot_url TEXT,
+    metrics_json JSON NOT NULL DEFAULT (JSON_OBJECT()),
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (attempt_id) REFERENCES exam_attempts (id) ON DELETE CASCADE
+) ENGINE = InnoDB;

@@ -1,0 +1,21 @@
+-- Run in the mysql command-line client from the extracted directory.
+CREATE DATABASE IF NOT EXISTS autoexam CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE autoexam;
+SOURCE 01_users.sql;
+SOURCE 02_exams.sql;
+SOURCE 03_subjects.sql;
+SOURCE 04_exam_assignments.sql;
+SOURCE 05_questions.sql;
+SOURCE 06_question_bank.sql;
+SOURCE 07_exam_attempts.sql;
+SOURCE 08_answers.sql;
+SOURCE 09_proctor_logs.sql;
+SOURCE 10_audit_logs.sql;
+SOURCE 11_view_exam_catalog.sql;
+SOURCE 12_view_assignment_roster.sql;
+SOURCE 13_view_published_results.sql;
+SOURCE 14_view_faculty_review_queue.sql;
+SOURCE 15_view_proctor_summary.sql;
+SOURCE 16_view_question_bank_inventory.sql;
+SOURCE 17_view_exam_outcomes.sql;
+SOURCE 18_view_attempt_progress.sql;

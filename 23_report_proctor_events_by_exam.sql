@@ -1,0 +1,1 @@
+SELECT t.exam_id, p.event_type, p.severity, COUNT(*) AS event_count FROM proctor_logs p JOIN exam_attempts t ON t.id = p.attempt_id GROUP BY t.exam_id, p.event_type, p.severity ORDER BY t.exam_id, p.event_type, p.severity;

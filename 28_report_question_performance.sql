@@ -1,0 +1,1 @@
+SELECT q.exam_id, q.id AS question_id, COUNT(*) AS graded_answers, ROUND(AVG(100.0 * a.final_marks / NULLIF(q.max_marks, 0)), 2) AS mean_percentage FROM questions q JOIN answers a ON a.question_id = q.id JOIN exam_attempts t ON t.id = a.attempt_id AND t.exam_id = q.exam_id WHERE t.status = 'PUBLISHED' GROUP BY q.exam_id, q.id ORDER BY q.exam_id, q.id;

@@ -1,0 +1,1 @@
+SELECT l.id, l.created_at, l.actor_id, u.full_name AS actor_name, l.action, l.target_type, l.target_id FROM audit_logs l LEFT JOIN users u ON u.id = l.actor_id ORDER BY l.created_at DESC, l.id DESC LIMIT 50;

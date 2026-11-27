@@ -1,28 +1,19 @@
-# AutoExam AI Machine Learning
+# AutoExam MySQL
 
-A Python 3.10+ package for rubric-based descriptive-answer grading. It trains a regularized logistic regression model to estimate the fraction of available marks from text and rubric features. The included model and metrics use synthetic examples only.
+This database package follows the current AutoExam SQLite schema and includes 34 SQL scripts for MySQL 8.0.16 or later. The Flask backend still uses SQLite. Running this package creates a separate schema and does not migrate existing records or switch the app connection.
 
-From the extracted project folder:
+## Install
 
-```powershell
-python -m autoexam_ml train data/train.jsonl data/validation.jsonl artifacts/model.json artifacts/metrics.json
-python -m autoexam_ml score artifacts/model.json data/example.json
-python -m autoexam_ml evaluate artifacts/model.json data/test.jsonl
-python -m unittest discover -s tests -v
+From the extracted folder, open the MySQL command-line client with `mysql -u YOUR_USER -p --abort-source-on-error`. Use an account with permission to create the autoexam database, tables and views. Then enter these commands:
+
+```sql
+SOURCE 00_install.sql;
+SHOW TABLES;
+SOURCE 33_demo_subjects.sql;
 ```
 
-The module has no third-party runtime dependencies. See docs/integration.md for the optional adapter. Scores are provisional and faculty retain final grading authority.
+The last line is optional. Scripts 01-10 create tables in foreign-key order. Scripts 11-18 create views. Run reports 19-28 and integrity checks 29-32 individually in the same client after `USE autoexam;`. Healthy integrity checks return zero rows.
 
-## Python utilities
+Use a UTC session when storing or comparing AutoExam timestamps. Run `SET time_zone = '+00:00';` in your MySQL session. The package assumes a fresh schema for first installation. Re-running setup creates missing tables and replaces views. Existing tables are not upgraded in place.
 
-Run each utility with `python -m autoexam_ml.<name> --help` to see its inputs.
-
-- audit_data checks train, validation and test data for overlapping question IDs.
-- dataset_summary shows sample counts and mean label percentages per question.
-- inspect_model shows the trained model's feature weights.
-- inspect_features shows the text features for a single answer JSON object.
-- batch_score reads a JSON array of answer objects and writes scores in input order.
-- review_queue extracts flagged entries from the batch output.
-- error_report compares predictions with labeled scores from a JSONL dataset.
-
-The archive contains 34 Python source files plus the datasets, model and documentation.
+The archive has 34 SQL scripts plus this README. SQL scripts were checked for file ordering and dependencies. Live MySQL execution requires a MySQL client and server.
