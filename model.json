@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "features": [
+    "recall",
+    "precision",
+    "concept_coverage",
+    "bigram_recall",
+    "length_match",
+    "negation_mismatch"
+  ],
+  "weights": [
+    1.174674113255969,
+    1.5146958220271491,
+    0.6985513370494135,
+    1.3636354689819525,
+    0.518698898274293,
+    -1.993896488385192
+  ],
+  "bias": -2.785413803688025
+}

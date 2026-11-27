@@ -1,1 +1,1 @@
-"""Test suite for AutoExam AI."""
+"""Machine-learning answer scoring for AutoExam AI."""

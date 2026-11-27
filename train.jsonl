@@ -1,0 +1,40 @@
+{"question_id":"loop","reference":"A loop repeats a block of code until a condition changes.","answer":"A loop repeats a block of code until a condition changes.","keywords":["repeat","code","condition"],"max_marks":5,"marks":5}
+{"question_id":"loop","reference":"A loop repeats a block of code until a condition changes.","answer":"A loop repeats code.","keywords":["repeat","code","condition"],"max_marks":5,"marks":2.5}
+{"question_id":"loop","reference":"A loop repeats a block of code until a condition changes.","answer":"A loop does not repeat code.","keywords":["repeat","code","condition"],"max_marks":5,"marks":0}
+{"question_id":"loop","reference":"A loop repeats a block of code until a condition changes.","answer":"Rain clouds formed over the city.","keywords":["repeat","code","condition"],"max_marks":5,"marks":0}
+{"question_id":"loop","reference":"A loop repeats a block of code until a condition changes.","answer":"","keywords":["repeat","code","condition"],"max_marks":5,"marks":0}
+{"question_id":"variable","reference":"A variable stores a value under a name.","answer":"A variable stores a value under a name.","keywords":["store","value","name"],"max_marks":5,"marks":5}
+{"question_id":"variable","reference":"A variable stores a value under a name.","answer":"A variable stores data.","keywords":["store","value","name"],"max_marks":5,"marks":2.5}
+{"question_id":"variable","reference":"A variable stores a value under a name.","answer":"A variable never stores a value.","keywords":["store","value","name"],"max_marks":5,"marks":0}
+{"question_id":"variable","reference":"A variable stores a value under a name.","answer":"Rain clouds formed over the city.","keywords":["store","value","name"],"max_marks":5,"marks":0}
+{"question_id":"variable","reference":"A variable stores a value under a name.","answer":"","keywords":["store","value","name"],"max_marks":5,"marks":0}
+{"question_id":"database","reference":"An index helps a database find rows faster.","answer":"An index helps a database find rows faster.","keywords":["index","database","faster"],"max_marks":5,"marks":5}
+{"question_id":"database","reference":"An index helps a database find rows faster.","answer":"An index speeds up search.","keywords":["index","database","faster"],"max_marks":5,"marks":2.5}
+{"question_id":"database","reference":"An index helps a database find rows faster.","answer":"An index does not help a database find rows.","keywords":["index","database","faster"],"max_marks":5,"marks":0}
+{"question_id":"database","reference":"An index helps a database find rows faster.","answer":"Rain clouds formed over the city.","keywords":["index","database","faster"],"max_marks":5,"marks":0}
+{"question_id":"database","reference":"An index helps a database find rows faster.","answer":"","keywords":["index","database","faster"],"max_marks":5,"marks":0}
+{"question_id":"array","reference":"An array groups values that can be accessed by position.","answer":"An array groups values that can be accessed by position.","keywords":["values","position"],"max_marks":5,"marks":5}
+{"question_id":"array","reference":"An array groups values that can be accessed by position.","answer":"An array groups data.","keywords":["values","position"],"max_marks":5,"marks":2.5}
+{"question_id":"array","reference":"An array groups values that can be accessed by position.","answer":"An array cannot group values.","keywords":["values","position"],"max_marks":5,"marks":0}
+{"question_id":"array","reference":"An array groups values that can be accessed by position.","answer":"Rain clouds formed over the city.","keywords":["values","position"],"max_marks":5,"marks":0}
+{"question_id":"array","reference":"An array groups values that can be accessed by position.","answer":"","keywords":["values","position"],"max_marks":5,"marks":0}
+{"question_id":"network","reference":"DNS converts domain names into IP addresses.","answer":"DNS converts domain names into IP addresses.","keywords":["domain names","ip addresses"],"max_marks":5,"marks":5}
+{"question_id":"network","reference":"DNS converts domain names into IP addresses.","answer":"DNS converts a host name.","keywords":["domain names","ip addresses"],"max_marks":5,"marks":2.5}
+{"question_id":"network","reference":"DNS converts domain names into IP addresses.","answer":"DNS never converts domain names.","keywords":["domain names","ip addresses"],"max_marks":5,"marks":0}
+{"question_id":"network","reference":"DNS converts domain names into IP addresses.","answer":"Rain clouds formed over the city.","keywords":["domain names","ip addresses"],"max_marks":5,"marks":0}
+{"question_id":"network","reference":"DNS converts domain names into IP addresses.","answer":"","keywords":["domain names","ip addresses"],"max_marks":5,"marks":0}
+{"question_id":"cache","reference":"A cache stores frequently used data to improve response time.","answer":"A cache stores frequently used data to improve response time.","keywords":["store","data","response time"],"max_marks":5,"marks":5}
+{"question_id":"cache","reference":"A cache stores frequently used data to improve response time.","answer":"A cache stores data.","keywords":["store","data","response time"],"max_marks":5,"marks":2.5}
+{"question_id":"cache","reference":"A cache stores frequently used data to improve response time.","answer":"A cache does not store data.","keywords":["store","data","response time"],"max_marks":5,"marks":0}
+{"question_id":"cache","reference":"A cache stores frequently used data to improve response time.","answer":"Rain clouds formed over the city.","keywords":["store","data","response time"],"max_marks":5,"marks":0}
+{"question_id":"cache","reference":"A cache stores frequently used data to improve response time.","answer":"","keywords":["store","data","response time"],"max_marks":5,"marks":0}
+{"question_id":"function","reference":"A function groups reusable code and can accept inputs.","answer":"A function groups reusable code and can accept inputs.","keywords":["reusable code","inputs"],"max_marks":5,"marks":5}
+{"question_id":"function","reference":"A function groups reusable code and can accept inputs.","answer":"Functions group code.","keywords":["reusable code","inputs"],"max_marks":5,"marks":2.5}
+{"question_id":"function","reference":"A function groups reusable code and can accept inputs.","answer":"A function cannot accept inputs.","keywords":["reusable code","inputs"],"max_marks":5,"marks":0}
+{"question_id":"function","reference":"A function groups reusable code and can accept inputs.","answer":"Rain clouds formed over the city.","keywords":["reusable code","inputs"],"max_marks":5,"marks":0}
+{"question_id":"function","reference":"A function groups reusable code and can accept inputs.","answer":"","keywords":["reusable code","inputs"],"max_marks":5,"marks":0}
+{"question_id":"encryption","reference":"Encryption protects data by converting plaintext into ciphertext.","answer":"Encryption protects data by converting plaintext into ciphertext.","keywords":["protect","plaintext","ciphertext"],"max_marks":5,"marks":5}
+{"question_id":"encryption","reference":"Encryption protects data by converting plaintext into ciphertext.","answer":"Encryption protects data.","keywords":["protect","plaintext","ciphertext"],"max_marks":5,"marks":2.5}
+{"question_id":"encryption","reference":"Encryption protects data by converting plaintext into ciphertext.","answer":"Encryption does not protect data.","keywords":["protect","plaintext","ciphertext"],"max_marks":5,"marks":0}
+{"question_id":"encryption","reference":"Encryption protects data by converting plaintext into ciphertext.","answer":"Rain clouds formed over the city.","keywords":["protect","plaintext","ciphertext"],"max_marks":5,"marks":0}
+{"question_id":"encryption","reference":"Encryption protects data by converting plaintext into ciphertext.","answer":"","keywords":["protect","plaintext","ciphertext"],"max_marks":5,"marks":0}

@@ -1,0 +1,10 @@
+{"question_id":"stack","reference":"A stack removes the most recently added item first.","keywords":["recently","added","first"],"answer":"A stack removes the most recently added item first.","max_marks":5,"marks":5}
+{"question_id":"stack","reference":"A stack removes the most recently added item first.","keywords":["recently","added","first"],"answer":"A stack removes the newest item.","max_marks":5,"marks":4}
+{"question_id":"stack","reference":"A stack removes the most recently added item first.","keywords":["recently","added","first"],"answer":"A stack removes the oldest item first.","max_marks":5,"marks":0}
+{"question_id":"stack","reference":"A stack removes the most recently added item first.","keywords":["recently","added","first"],"answer":"A flower grows in soil.","max_marks":5,"marks":0}
+{"question_id":"stack","reference":"A stack removes the most recently added item first.","keywords":["recently","added","first"],"answer":"","max_marks":5,"marks":0}
+{"question_id":"dns","reference":"DNS translates domain names into IP addresses.","keywords":["domain","names","addresses"],"answer":"DNS translates domain names into IP addresses.","max_marks":5,"marks":5}
+{"question_id":"dns","reference":"DNS translates domain names into IP addresses.","keywords":["domain","names","addresses"],"answer":"DNS looks up addresses.","max_marks":5,"marks":2.5}
+{"question_id":"dns","reference":"DNS translates domain names into IP addresses.","keywords":["domain","names","addresses"],"answer":"DNS creates web pages.","max_marks":5,"marks":0}
+{"question_id":"dns","reference":"DNS translates domain names into IP addresses.","keywords":["domain","names","addresses"],"answer":"","max_marks":5,"marks":0}
+{"question_id":"dns","reference":"DNS translates domain names into IP addresses.","keywords":["domain","names","addresses"],"answer":"Domain names are converted into IP addresses.","max_marks":5,"marks":5}

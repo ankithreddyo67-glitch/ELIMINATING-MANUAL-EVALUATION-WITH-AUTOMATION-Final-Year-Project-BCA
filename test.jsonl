@@ -1,0 +1,10 @@
+{"question_id":"queue","reference":"A queue removes the earliest added item first.","keywords":["earliest","added","first"],"answer":"A queue removes the earliest added item first.","max_marks":5,"marks":5}
+{"question_id":"queue","reference":"A queue removes the earliest added item first.","keywords":["earliest","added","first"],"answer":"The oldest item leaves before newer items.","max_marks":5,"marks":5}
+{"question_id":"queue","reference":"A queue removes the earliest added item first.","keywords":["earliest","added","first"],"answer":"A queue removes the last added item first.","max_marks":5,"marks":0}
+{"question_id":"queue","reference":"A queue removes the earliest added item first.","keywords":["earliest","added","first"],"answer":"It stores items.","max_marks":5,"marks":1}
+{"question_id":"queue","reference":"A queue removes the earliest added item first.","keywords":["earliest","added","first"],"answer":"","max_marks":5,"marks":0}
+{"question_id":"index","reference":"A database index speeds up finding rows by indexed column values.","keywords":["speeds","rows","column"],"answer":"A database index speeds up finding rows by indexed column values.","max_marks":5,"marks":5}
+{"question_id":"index","reference":"A database index speeds up finding rows by indexed column values.","keywords":["speeds","rows","column"],"answer":"It helps locate records faster.","max_marks":5,"marks":5}
+{"question_id":"index","reference":"A database index speeds up finding rows by indexed column values.","keywords":["speeds","rows","column"],"answer":"An index deletes all matching rows.","max_marks":5,"marks":0}
+{"question_id":"index","reference":"A database index speeds up finding rows by indexed column values.","keywords":["speeds","rows","column"],"answer":"It is a list.","max_marks":5,"marks":1}
+{"question_id":"index","reference":"A database index speeds up finding rows by indexed column values.","keywords":["speeds","rows","column"],"answer":"","max_marks":5,"marks":0}
