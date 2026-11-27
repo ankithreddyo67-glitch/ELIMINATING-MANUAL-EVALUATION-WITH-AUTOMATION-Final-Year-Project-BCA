@@ -1,0 +1,4 @@
+-r requirements.txt
+bcrypt>=4.1.0
+opencv-python>=4.9.0
+numpy>=1.26.0
