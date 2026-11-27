@@ -9,11 +9,11 @@ import {
   getTheme,
   getToken,
   showToast,
-} from "./api.js";
-import { renderAdminPortal } from "./views-admin.js";
-import { renderAuthView } from "./views-auth.js";
-import { renderFacultyPortal } from "./views-faculty.js";
-import { renderStudentPortal } from "./views-student.js";
+} from "/js/api.js";
+import { renderAdminPortal } from "/js/views-admin.js";
+import { renderAuthView } from "/js/views-auth.js";
+import { renderFacultyPortal } from "/js/views-faculty.js";
+import { renderStudentPortal } from "/js/views-student.js";
 
 const appEl = document.getElementById("app");
 applyTheme(getTheme());
