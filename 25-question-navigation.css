@@ -1,0 +1,29 @@
+.q-nav-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.q-pill {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.q-pill.answered {
+  border-color: var(--success);
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.q-pill.current {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+

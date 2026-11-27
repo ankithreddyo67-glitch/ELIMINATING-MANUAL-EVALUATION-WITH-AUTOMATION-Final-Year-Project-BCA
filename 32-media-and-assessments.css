@@ -1,0 +1,81 @@
+@media (max-width: 980px) {
+  .app-shell { grid-template-columns: 1fr; }
+  .sidebar { position: static; height: auto; }
+  .auth-wrapper { grid-template-columns: 1fr; }
+  .auth-hero { padding: 32px 24px 12px; }
+  .exam-room { grid-template-columns: 1fr; }
+  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+}
+
+@media print {
+  .sidebar, .no-print, .toast-container { display: none !important; }
+  .app-shell { display: block; }
+  .main-area { padding: 0; max-width: 100%; }
+  body, .card { background: #fff !important; color: #000 !important; box-shadow: none !important; }
+}
+
+.assessment-dialog {
+  width: min(760px, calc(100% - 32px));
+  max-height: 90vh;
+  margin: auto;
+  padding: clamp(16px, 3vw, 28px);
+  color: var(--text);
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.assessment-dialog::backdrop {
+  background: rgb(0 0 0 / 65%);
+}
+
+.assessment-dialog [hidden] {
+  display: none;
+}
+
+.assessment-controls,
+.question-fields {
+  display: grid;
+  gap: 12px;
+}
+
+.question-fields {
+  margin: 0 0 12px;
+  padding: 14px;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.assessment-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.paper-questions {
+  padding-inline-start: 24px;
+}
+
+.paper-questions li {
+  margin-block: 16px;
+  overflow-wrap: anywhere;
+}
+
+.paper-questions pre {
+  white-space: pre-wrap;
+}
+
+.code-answer {
+  font-family: monospace;
+  tab-size: 4;
+}
+
+.assessment-dialog input[type="checkbox"] {
+  width: auto;
+  margin: 6px;
+}
+
+.assessment-dialog fieldset > label {
+  display: block;
+}

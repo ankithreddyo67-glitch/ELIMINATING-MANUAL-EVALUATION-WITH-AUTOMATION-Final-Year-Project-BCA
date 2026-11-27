@@ -1,0 +1,15 @@
+.timer-badge {
+  font-variant-numeric: tabular-nums;
+  font-size: 1.05rem;
+  font-weight: 750;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.timer-badge.urgent {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+

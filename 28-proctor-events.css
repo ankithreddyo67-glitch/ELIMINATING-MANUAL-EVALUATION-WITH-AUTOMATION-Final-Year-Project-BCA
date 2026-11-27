@@ -1,0 +1,20 @@
+.event-feed {
+  max-height: 170px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.event-item {
+  font-size: 0.78rem;
+  padding: 7px 9px;
+  border-radius: 7px;
+  background: var(--bg);
+  border-left: 3px solid var(--warning);
+}
+
+.event-item.HIGH { border-left-color: var(--danger); }
+.event-item.LOW  { border-left-color: var(--accent); }
+

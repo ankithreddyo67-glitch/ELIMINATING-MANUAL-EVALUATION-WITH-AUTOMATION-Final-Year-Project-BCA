@@ -1,0 +1,17 @@
+/* Concept tags */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.tag-hit  { background: var(--success-soft); color: var(--success); }
+.tag-miss { background: var(--danger-soft); color: var(--danger); }
+
